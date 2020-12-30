@@ -1,17 +1,23 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <home-swiper>
+      <!-- <swiper-item v-for="(item, index) in banners" :key="index">
+        <a :href="item.link">
+          <img :src="item.img" alt="">
+        </a>
+      </swiper-item> -->
+      
+    </home-swiper>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HomeSwiper from 'content/HomeSwiper'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HomeSwiper
   }
 }
 </script>
